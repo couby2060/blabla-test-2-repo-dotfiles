@@ -111,6 +111,7 @@ alias shortcuts='cat ~/.dotfiles/zsh/.zshrc'
 alias sub-settings='cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User'
 alias subsettings='cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User'
 alias word-link='rm -f ~/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/Startup.localized/Word/linkCreation.dotm'
+alias gitkey='/usr/bin/ssh-add -K ~/.ssh/git-key'
 
 
 # alias vim='/usr/local/vim'
