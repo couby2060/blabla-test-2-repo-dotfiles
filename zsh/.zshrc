@@ -92,7 +92,6 @@ alias ..='cd ..'
 alias brewup="brew update && brew doctor && brew outdated && brew upgrade && brew cleanup && brew cask cleanup"
 alias c='clear'
 alias cd..='cd ..'
-alias covestro='open -a /Applications/Preview.app ~/Documents/Gridcard_cov.png'
 alias fms='printf "5cEuW6KjvVVYyDx" | pbcopy'
 alias gadd='git add -A'
 alias gcommit='git commit -m'
