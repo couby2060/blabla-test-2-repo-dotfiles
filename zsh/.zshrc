@@ -89,7 +89,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias ls='ls -l -G'
 alias ..='cd ..'
-alias brewup="brew update && brew doctor && brew outdated && brew upgrade && brew cleanup && brew cask cleanup"
+alias brewup="brew update && brew doctor && brew outdated && brew upgrade && brew cleanup && brew cleanup"
 alias c='clear'
 alias cd..='cd ..'
 alias fms='printf "5cEuW6KjvVVYyDx" | pbcopy'
@@ -112,6 +112,8 @@ alias subsettings='cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/U
 alias word-link='rm -f ~/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/Startup.localized/Word/linkCreation.dotm'
 alias gitkey='/usr/bin/ssh-add -K ~/.ssh/git-key'
 alias ccat='pygmentize'
+
+source "`brew --prefix`/etc/grc.bashrc"
 
 # alias vim='/usr/local/vim'
 
