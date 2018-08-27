@@ -125,6 +125,7 @@ mkcd () {
   cd "$1"
 }
 
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 ### There from beginning
 export PATH="/usr/local/bin:$PATH"
