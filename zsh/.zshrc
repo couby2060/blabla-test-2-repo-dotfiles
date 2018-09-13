@@ -117,7 +117,14 @@ source "`brew --prefix`/etc/grc.bashrc"
 
 # alias vim='/usr/local/vim'
 
+alias tstamp='date "+%Y-%m-%d_%H-%M-%S"'
 
+alias mktstamp='mkdir $(date +%Y-%m-%d_%H-%M-%S)'
+
+mkts () {
+  d=$(date +%Y-%m-%d_)
+  mkdir "$d$1"
+}
 
 
 mkcd () {
