@@ -121,6 +121,10 @@ alias tstamp='date "+%Y-%m-%d_%H-%M-%S"'
 
 alias mktstamp='mkdir $(date +%Y-%m-%d_%H-%M-%S)'
 
+addts (){
+	d=$(date +%Y-%m-%d_)
+	mv "$1" "$d$1"
+}
 cpts (){
 	d=$(date +%Y-%m-%d_)
 	cp "$1" "$d$2"
