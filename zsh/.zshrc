@@ -142,6 +142,30 @@ mkcd () {
   cd "$1"
 }
 
+alias l='ls -lFh'
+alias la='ls -lAFh'
+alias lr='ls -tRFh'
+alias lt='ls -ltFh'
+alias ll='ls -l'
+alias ldot='ls -ld .*'
+alias lS='ls -1FSsh'
+alias lart='ls -1Fcart'
+alias lrt='ls -1Fcrt'
+alias zshrc='$EDITOR ~/.dotfiles/zsh/.zshrc'
+alias h='history'
+alias H='| head'
+alias T='| tail'
+alias G='| grep'
+alias L='| less'
+alias M='| most'
+alias LL='2>&1 | less'
+alias CA='2>&1 | cat -A'
+alias NE='2> /dev/null'
+alias NUL='> /dev/null 2>&1'
+alias P='2>&1| pygmentize -l pytb'
+
+
+
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 ### There from beginning
