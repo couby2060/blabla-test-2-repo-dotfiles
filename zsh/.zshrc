@@ -143,8 +143,8 @@ mkcd () {
 }
 
 fileserver() {
-mount -t smbfs //user:user123@share.rb.de/fileserver ~/Fileserver-Mount/
-cd ~/Fileserver-Mount/
+  mount -t smbfs //user:user123@share.rb.de/fileserver ~/Fileserver-Mount/
+  cd ~/Fileserver-Mount/
 }
 
 gpullall () {
