@@ -141,6 +141,12 @@ mkcd () {
   mkdir "$1"
   cd "$1"
 }
+
+fileserver() {
+mount -t smbfs //user:user123@share.rb.de/fileserver ~/Fileserver-Mount/
+cd ~/Fileserver-Mount/
+}
+
 gpullall () {
   CURRENTPATH=$(pwd)
   echo 'Pulling: ~/Repositories/DeutzAG'
