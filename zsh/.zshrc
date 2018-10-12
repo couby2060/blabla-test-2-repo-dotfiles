@@ -141,6 +141,35 @@ mkcd () {
   mkdir "$1"
   cd "$1"
 }
+gpullall () {
+  CURRENTPATH=$(pwd)
+  echo 'Pulling: ~/Repositories/DeutzAG'
+  cd ~/Repositories/DeutzAG;git pull
+  echo 'done\n'
+  echo 'Pulling: ~/Repositories/covestro/newsletter_update'
+  cd ~/Repositories/covestro/newsletter_update;git pull
+  echo 'done\n'
+  echo 'Pulling: ~/Repositories/mediamarkt/mediamarkt-newsletter'
+  cd ~/Repositories/mediamarkt/mediamarkt-newsletter;git pull
+  echo 'done\n'
+  echo 'Pulling: ~/Repositories/mediamarkt/mediamarkt-relaunch'
+  cd ~/Repositories/mediamarkt/mediamarkt-relaunch;git pull
+  echo 'done\n'
+  echo 'Pulling: ~/Repositories/myfujifilm/myfujifilm'
+  cd ~/Repositories/myfujifilm/myfujifilm;git pull
+  echo 'done\n'
+  echo 'Pulling: ~/Repositories/myfujifilm/myfujifilm-newsletter'
+  cd ~/Repositories/myfujifilm/myfujifilm-newsletter;git pull
+  echo 'done\n'
+  echo 'Pulling: ~/Repositories/twt-rb/default'
+  cd ~/Repositories/twt-rb/default;git pull
+  echo 'done\n'
+  echo 'Pulling: ~/Repositories/twt-rb/newsletter'
+  cd ~/Repositories/twt-rb/newsletter;git pull
+  echo 'done\n'
+  cd $CURRENTPATH
+  echo '---------- COMPLETED ----------\n'
+}
 
 alias l='ls -lFh'
 alias la='ls -lAFh'
@@ -155,7 +184,7 @@ alias zshrc='$EDITOR ~/.dotfiles/zsh/.zshrc'
 alias h='history'
 alias H='| head'
 alias T='| tail'
-alias G='| grep'
+alias -g G='| grep --color'
 alias L='| less'
 alias M='| most'
 alias LL='2>&1 | less'
@@ -164,7 +193,8 @@ alias NE='2> /dev/null'
 alias NUL='> /dev/null 2>&1'
 alias P='2>&1| pygmentize -l pytb'
 
-
+alias covnl='cd ~/Repositories/covestro/newsletter_update;git pull;subl .;npm run build'
+alias rbnl='cd ~/Repositories/twt-rb/newsletter;git pull;subl .;npm run build'
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
