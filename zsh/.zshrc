@@ -176,7 +176,12 @@ gpullall () {
   cd $CURRENTPATH
   echo '---------- COMPLETED ----------\n'
 }
-
+temp () {
+  CURRENTPATH=$(pwd)
+  cd ~/Repositories/ansiweather
+./ansiweather -l Cologne -u metric -a false -s false -i false -w false -h false -p false
+cd $CURRENTPATH
+}
 alias l='ls -lFh'
 alias la='ls -lAFh'
 alias lr='ls -tRFh'
@@ -191,7 +196,7 @@ alias h='history'
 alias H='| head'
 alias T='| tail'
 alias -g G='| grep --color'
-alias L='| less'
+alias -g L='| less'
 alias M='| most'
 alias LL='2>&1 | less'
 alias CA='2>&1 | cat -A'
