@@ -182,6 +182,15 @@ temp () {
 ./ansiweather -l Cologne -u metric -a false -s false -i false -w false -h false -p false
 cd $CURRENTPATH
 }
+
+pall(){
+  echo 'Your commit message:'
+  read commitmsg
+  git add -A; git commit -m $commitmsg; git pull; git push
+}
+
+
+
 alias l='ls -lFh'
 alias la='ls -lAFh'
 alias lr='ls -tRFh'
@@ -206,6 +215,7 @@ alias P='2>&1| pygmentize -l pytb'
 
 alias covnl='cd ~/Repositories/covestro/newsletter_update;git pull;subl .;npm run build'
 alias rbnl='cd ~/Repositories/twt-rb/newsletter;git pull;subl .;npm run build'
+
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
