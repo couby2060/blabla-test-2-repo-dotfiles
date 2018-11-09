@@ -155,6 +155,9 @@ gpullall () {
   echo 'Pulling: ~/Repositories/covestro/newsletter_update'
   cd ~/Repositories/covestro/newsletter_update;git pull
   echo 'done\n'
+  echo 'Pulling: ~/Repositories/covestro/prototypes'
+  cd ~/Repositories/covestro/prototypes;git pull
+  echo 'done\n'
   echo 'Pulling: ~/Repositories/mediamarkt/mediamarkt-newsletter'
   cd ~/Repositories/mediamarkt/mediamarkt-newsletter;git pull
   echo 'done\n'
