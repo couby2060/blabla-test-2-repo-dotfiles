@@ -219,13 +219,6 @@ alias P='2>&1| pygmentize -l pytb'
 alias covnl='cd ~/Repositories/covestro/newsletter_update;git pull;subl .;npm run build'
 alias rbnl='cd ~/Repositories/twt-rb/newsletter;git pull;subl .;npm run build'
 
-<C-x> t t: select task with peco
-<C-x> t p: select project with peco
-<C-x> t l: select labels with peco
-<C-x> t c: select task and close with peco
-<C-x> t d: select date
-<C-x> t o: select task, and open it with browser when has url
-
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
