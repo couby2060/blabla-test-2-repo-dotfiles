@@ -220,6 +220,8 @@ alias covnl='cd ~/Repositories/covestro/newsletter_update;git pull;subl .;npm ru
 alias rbnl='cd ~/Repositories/twt-rb/newsletter;git pull;subl .;npm run build'
 
 
+source "/Users/jwilhelm/.dotfiles/zsh/todoist/todoist_functions.sh"
+
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 ### There from beginning
@@ -227,5 +229,3 @@ export PATH="/usr/local/bin:$PATH"
 ### Added by Homebrew
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/node@8/bin:$PATH"
-
-source "/Users/jwilhelm/.dotfiles/zsh/todoist/todoist_functions.sh"
