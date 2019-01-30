@@ -179,6 +179,7 @@ gpullall () {
   cd $CURRENTPATH
   echo '---------- COMPLETED ----------\n'
 }
+
 temp () {
   CURRENTPATH=$(pwd)
   cd ~/Repositories/ansiweather
@@ -192,6 +193,14 @@ pall(){
   git add -A; git commit -m $commitmsg; git pull; git push
 }
 
+sma () {
+  CURRENTPATH=$(pwd)
+  mv ~/Downloads/SMA\ Stundenübersicht\ -\ SMA\ Übersicht.pdf ~/Downloads/SMA-Stundenübersicht/Report.pdf
+  cd ~/Downloads/SMA-Stundenübersicht
+  addts Report.pdf
+  cd $CURRENTPATH
+  echo '---------- SMA REPORT ABGELEGT ----------\n'
+}
 
 
 alias l='ls -lFh'
