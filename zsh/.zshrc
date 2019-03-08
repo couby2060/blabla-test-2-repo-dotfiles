@@ -176,6 +176,12 @@ gpullall () {
   echo 'Pulling: ~/Repositories/twt-rb/newsletter'
   cd ~/Repositories/twt-rb/newsletter;git pull
   echo 'done\n'
+  echo 'Pulling: ~/Repositories/das-photo/das-photo-relaunch'
+  cd ~/Repositories/das-photo/das-photo-relaunch;git pull
+  echo 'done\n'
+  echo 'Pulling: ~/Repositories/das-photo/das-photo-sysmails'
+  cd ~/Repositories/das-photo/das-photo-sysmails;git pull
+  echo 'done\n'
   cd $CURRENTPATH
   echo '---------- COMPLETED ----------\n'
 }
@@ -200,6 +206,22 @@ sma () {
   addts Report.pdf
   cd $CURRENTPATH
   echo '---------- SMA REPORT ABGELEGT ----------\n'
+}
+fuji () {
+  CURRENTPATH=$(pwd)
+mv ~/Downloads/Fujifilm\ Shop_\ DAS\ PHOTO\ Stundenübersicht\ -\ Fujifilm\ Shop_\ DAS\ PHOTO.pdf ~/Downloads/DAS-PHOTO-Stundenübersicht/Report.pdf
+cd ~/Downloads/DAS-PHOTO-Stundenübersicht
+  addts Report.pdf
+  cd $CURRENTPATH
+  echo '---------- DAS PHOTO REPORT ABGELEGT ----------\n'
+}
+deutz () {
+  CURRENTPATH=$(pwd)
+mv ~/Downloads/DEUTZ\ AG_\ Leitsystem\ -\ DEUTZ\ AG_\ Leitsystem.pdf ~/Downloads/DEUTZ-Stundenübersicht/Report.pdf
+cd ~/Downloads/DEUTZ-Stundenübersicht/
+  addts Report.pdf
+  cd $CURRENTPATH
+  echo '---------- DEUTZ REPORT ABGELEGT ----------\n'
 }
 
 
