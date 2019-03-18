@@ -260,3 +260,4 @@ export PATH="/usr/local/bin:$PATH"
 ### Added by Homebrew
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/node@8/bin:$PATH"
+### fiexport PATH="/usr/local/opt/ruby/bin:$PATH"
