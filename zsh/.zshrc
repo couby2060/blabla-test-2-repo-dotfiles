@@ -112,6 +112,7 @@ alias subsettings='cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/U
 alias word-link='rm -f ~/Library/Group\ Containers/UBF8T346G9.Office/User\ Content.localized/Startup.localized/Word/linkCreation.dotm'
 alias gitkey='/usr/bin/ssh-add -K ~/.ssh/git-key'
 alias ccat='pygmentize'
+alias cleandesk='find ~/Desktop -type f -maxdepth 1 -mtime +15 -print | xargs -I {} mv "{}" ~/Desktop/archive/'
 
 source "`brew --prefix`/etc/grc.bashrc"
 
