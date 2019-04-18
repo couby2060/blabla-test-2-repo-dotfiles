@@ -73,13 +73,13 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+# export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+export EDITOR="/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
@@ -106,6 +106,7 @@ alias gcommit='git commit -m'
 alias gridcard='open -a /Applications/Preview.app ~/Documents/Gridcard_cov.png'
 alias gstatus='git status'
 alias inx='printf "8#44VTr!&dFs!zc" | pbcopy'
+alias inxinx='inx;open -a Inxmail\ Professional'
 alias links='open -a /Applications/Microsoft\ Excel.app ~/Dropbox/myfujifilm/AnalyticsTracking-052017.xlsx'
 alias odoc='open -a /Applications/Microsoft\ Word.app/ '
 alias opdf='open -a /Applications/Adobe\ Acrobat\ DC/Adobe\ Acrobat.app/ '
