@@ -97,7 +97,7 @@ export EDITOR="/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text"
 
 alias ls='ls -l -G'
 alias ..='cd ..'
-alias brewup="brew update && brew doctor && brew outdated && brew upgrade && brew cleanup && brew cleanup"
+alias brewup="brew update && brew doctor && brew outdated && brew upgrade && brew cleanup && brew cleanup && brew cask upgrade"
 alias c='clear'
 alias cd..='cd ..'
 alias fms='printf "z7927WdTjt8UgFzp2X24" | pbcopy'
