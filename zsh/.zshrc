@@ -100,10 +100,10 @@ alias ..='cd ..'
 alias brewup="brew update && brew doctor && brew outdated && brew upgrade && brew cleanup && brew cleanup && brew cask upgrade"
 alias c='clear'
 alias cd..='cd ..'
-alias fms='printf "z7927WdTjt8UgFzp2X24" | pbcopy'
+alias fms='printf "ABC" | pbcopy'
 alias gadd='git add -A'
 alias gcommit='git commit -m'
-alias gridcard='open -a /Applications/Preview.app ~/Documents/Gridcard_cov.png'
+alias gridcard='open -a /System/Applications/Preview.app ~/Documents/Gridcard_cov.png'
 alias gstatus='git status'
 alias inx='printf "8#44VTr!&dFs!zc" | pbcopy'
 alias inxinx='inx;open -a Inxmail\ Professional'
@@ -219,11 +219,11 @@ sma () {
 }
 fuji () {
   CURRENTPATH=$(pwd)
-mv ~/Downloads/Fujifilm\ Shop_\ DAS\ PHOTO\ Stundenübersicht\ -\ Fujifilm\ Shop_\ DAS\ PHOTO.pdf ~/Downloads/DAS-PHOTO-Stundenübersicht/Report.pdf
-cd ~/Downloads/DAS-PHOTO-Stundenübersicht
+mv ~/Downloads/ASP-Shops\ Stundenübersicht\ -\ ASP\ Shop\ Übersicht.pdf ~/Downloads/ASP-Shop-Stundenübersicht/Report.pdf
+cd ~/Downloads/ASP-Shop-Stundenübersicht
   addts Report.pdf
   cd $CURRENTPATH
-  echo '---------- DAS PHOTO REPORT ABGELEGT ----------\n'
+  echo '---------- ASP SHOP / MOONLIGHT REPORT ABGELEGT ----------\n'
 }
 deutz () {
   CURRENTPATH=$(pwd)
@@ -271,3 +271,5 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/node@8/bin:$PATH"
 ### fiexport PATH="/usr/local/opt/ruby/bin:$PATH"
+
+export GOPATH="/Users/jwilhelm/Go"
