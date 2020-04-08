@@ -260,6 +260,9 @@ alias P='2>&1| pygmentize -l pytb'
 alias covnl='cd ~/Repositories/covestro/newsletter_update;git pull;subl .;npm run build'
 alias rbnl='cd ~/Repositories/twt-rb/newsletter;git pull;subl .;npm run build'
 
+alias ap='/Users/jwilhelm/Desktop/jwi-test/py/Ansprechpartner/ap.py'
+alias apcsv='subl ~/Desktop/jwi-test/py/Ansprechpartner/currentprojects.csv'
+
 
 source "/Users/jwilhelm/.dotfiles/zsh/todoist/todoist_functions.sh"
 
