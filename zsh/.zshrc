@@ -159,26 +159,11 @@ fileserver() {
 
 gpullall () {
   CURRENTPATH=$(pwd)
-  echo 'Pulling: ~/Repositories/DeutzAG'
-  cd ~/Repositories/DeutzAG;git pull
-  echo 'done\n'
   echo 'Pulling: ~/Repositories/covestro/newsletter_update'
   cd ~/Repositories/covestro/newsletter_update;git pull
   echo 'done\n'
-  echo 'Pulling: ~/Repositories/covestro/prototypes'
-  cd ~/Repositories/covestro/prototypes;git pull
-  echo 'done\n'
-  echo 'Pulling: ~/Repositories/mediamarkt/mediamarkt-newsletter'
-  cd ~/Repositories/mediamarkt/mediamarkt-newsletter;git pull
-  echo 'done\n'
   echo 'Pulling: ~/Repositories/mediamarkt/mediamarkt-relaunch'
   cd ~/Repositories/mediamarkt/mediamarkt-relaunch;git pull
-  echo 'done\n'
-  echo 'Pulling: ~/Repositories/myfujifilm/myfujifilm'
-  cd ~/Repositories/myfujifilm/myfujifilm;git pull
-  echo 'done\n'
-  echo 'Pulling: ~/Repositories/myfujifilm/myfujifilm-newsletter'
-  cd ~/Repositories/myfujifilm/myfujifilm-newsletter;git pull
   echo 'done\n'
   echo 'Pulling: ~/Repositories/twt-rb/default'
   cd ~/Repositories/twt-rb/default;git pull
@@ -188,9 +173,6 @@ gpullall () {
   echo 'done\n'
   echo 'Pulling: ~/Repositories/das-photo/das-photo-relaunch'
   cd ~/Repositories/das-photo/das-photo-relaunch;git pull
-  echo 'done\n'
-  echo 'Pulling: ~/Repositories/das-photo/das-photo-sysmails'
-  cd ~/Repositories/das-photo/das-photo-sysmails;git pull
   echo 'done\n'
   cd $CURRENTPATH
   echo '---------- COMPLETED ----------\n'
